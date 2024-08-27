@@ -1,0 +1,9 @@
+transformers==3.5.1
+sentence-transformers
+unidecode
+jsonlines
+csv
+json
+nltk
+unidecode
+pandas as pd
