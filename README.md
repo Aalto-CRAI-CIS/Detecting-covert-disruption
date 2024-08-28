@@ -6,9 +6,9 @@ This project examines conversational properties such as conversational actions i
 Model card as suggested in Mitchell et al. (2019).
 
 
-## Data input
+## Data input for feature extraction
 
-This project requires conversational data as input in JSON format, with the following structure:
+This project requires conversational data as input in JSON format for feature extraction, with the following structure:
 
 * conversation_id: a key at root level for each conversation included in the dataset
 
@@ -32,14 +32,23 @@ Message items in the list with the following information (keys):
 
 ## Usage
 
-Before trolling classification, several steps are required:
+Before feature extraction and trolling classification, several steps are required:
 
 * Toxicity classification using Perspective API.
 * Politeness strategies and rhetorical prompt classification for each conversation, similarly to Zhang et al. (2018). Use a JSON file with conversation_id at root level for each conversation, saving each feature under a separate key (`file[conversation_id][prompt]` AND `file[conversation_id][polite]`).
 * Download blacklist words file provided by Liu et al. (2005).
 * Classify all comments in data for conversational action probabilities, either using MNLI (Yin et al., 2019) or a suitable approach, with the following classes: `["a question", "a challenge", "an accusation", "a request for action", "a proposal", "a statement", "an appreciation", "a denial", "an apology", "an acceptance"]`
 * Classify all comments with probabilities for the following additional categories, e.g. with MNLI: `["a disagreement", "an agreement", "a negative reaction", "a positive reaction"]`
-    
+
+Feature extraction:
+
+* Use Extract_action_features_and_asymmetries_in_conversations.ipynb for extracting conversation features.
+* Output is a .csv file with conversation features as vectors.
+
+Trolling classification:
+
+* (Coming up)
+
 
 ***
 
