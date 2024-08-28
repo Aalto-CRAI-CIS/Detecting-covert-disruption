@@ -14,7 +14,7 @@ This project requires conversational data as input in JSON format, with the foll
 
 For each conversation:
 
-* messages: a key pointing to list of messages
+* messages: a key pointing to list of messages that are part of the same conversation (a conversation in a threaded structure is initiated by a root-level comment, formed by all comments that are part of the same reply tree initiated by the root-level comment).
 
 Message items in the list with the following information (keys):
 
@@ -37,7 +37,8 @@ Before trolling classification, several steps are required:
 * Toxicity classification using Perspective API.
 * Politeness strategies and rhetorical prompt classification for each conversation, similarly to Zhang et al. (2018). Use a JSON file with conversation_id at root level for each conversation, saving each feature under a separate key (`file[conversation_id][prompt]` AND `file[conversation_id][polite]`).
 * Download blacklist words file provided by Liu et al. (2005).
-* Classify all comments in data for conversational action probabilities, either using MNLI (Yin et al., 2019) or a suitable approach, with the following classes: `["a question", "an answer to a question", "a challenge", "an accusation", "a request for action", "an admission", "a denial", "an apology", "a rejection", "an acceptance", "a statement", "an announcement", "a proposal", "an appreciation", "a disagreement", "an agreement", "a negative reaction", "a positive reaction"]`
+* Classify all comments in data for conversational action probabilities, either using MNLI (Yin et al., 2019) or a suitable approach, with the following classes: `["a question", "a challenge", "an accusation", "a request for action", "a proposal", "a statement", "an appreciation", "a denial", "an apology", "an acceptance"]`
+* Classify all comments with probabilities for the following additional categories, e.g. with MNLI: `["a disagreement", "an agreement", "a negative reaction", "a positive reaction"]`
     
 
 ***
