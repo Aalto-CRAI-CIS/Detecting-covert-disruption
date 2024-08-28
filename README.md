@@ -35,7 +35,7 @@ Message items in the list with the following information (keys):
 Before trolling classification, several steps are required:
 
 * Toxicity classification using Perspective API.
-* Politeness strategies and rhetorical prompt classification for each conversation, similarly to Zhang et al. (2018). Use a JSON file with conversation_id at root level for each conversation (`file[conversation_id][prompt]` AND `file[conversation_id][polite]`).
+* Politeness strategies and rhetorical prompt classification for each conversation, similarly to Zhang et al. (2018). Use a JSON file with conversation_id at root level for each conversation, saving each feature under a separate key (`file[conversation_id][prompt]` AND `file[conversation_id][polite]`).
 * Download blacklist words file provided by Liu et al. (2005).
 * Classify all comments in data for conversational action probabilities, either using MNLI (Yin et al., 2019) or a suitable approach, with the following classes: `["a question", "an answer to a question", "a challenge", "an accusation", "a request for action", "an admission", "a denial", "an apology", "a rejection", "an acceptance", "a statement", "an announcement", "a proposal", "an appreciation", "a disagreement", "an agreement", "a negative reaction", "a positive reaction"]`
     
