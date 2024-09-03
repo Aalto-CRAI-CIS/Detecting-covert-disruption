@@ -49,6 +49,9 @@ Trolling classification:
 
 * We have described the implementation of the trolling conversations classification model in our paper (Paakki et al., 2024). Please see the paper in order to replicate the model. However, unfortunately, due to potential risks and ethical issues, following our [University's guidelines](https://www.aalto.fi/sites/g/files/flghsv161/files/2022-05/Aalto_University_Open_Science_and_Research_Policy_050222.pdf), we cannot publish the model openly.
 
+## Data
+
+* At the time when the data for this project was originally collected, policies and rules of our data sources were different. Similarly, University policies regarding privacy and responsible open science have been since updated. Due to these changes, in order to follow [University's guidelines of responsible open science](https://www.aalto.fi/sites/g/files/flghsv161/files/2022-05/Aalto_University_Open_Science_and_Research_Policy_050222.pdf), we are unable to openly share the data. Please get in touch with the authors for further details.
 
 ***
 
