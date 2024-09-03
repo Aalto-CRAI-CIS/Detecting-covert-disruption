@@ -42,7 +42,7 @@ Before feature extraction and trolling classification, several steps are require
 
 Feature extraction:
 
-* Use Extract_action_features_and_asymmetries_in_conversations.ipynb for extracting conversation features.
+* Use `Extract_action_features_and_asymmetries_in_conversations.ipynb` for extracting conversation features.
 * Output is a .csv file with conversation features as vectors.
 
 Trolling classification:
