@@ -1,8 +1,9 @@
 # Detecting-covert-disruption
 This project examines conversational properties such as conversational actions in online forum interaction to detect covert disruptive (trolling) behavior in a conversation.
 
-See model card for intended use and ethical considerations:
-![link](https://github.com/user-attachments/assets/b8ef7098-e4f7-4157-a33d-ffad52ed0949)
+See 
+[![model card](https://github.com/user-attachments/assets/b8ef7098-e4f7-4157-a33d-ffad52ed0949)](https://github.com/Aalto-CRAI-CIS/Detecting-covert-disruption/tree/main)
+for intended use and ethical considerations.
 
 Model card as suggested in Mitchell et al. (2019).
 
