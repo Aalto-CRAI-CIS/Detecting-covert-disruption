@@ -1,6 +1,4 @@
-# Detecting-covert-disruption
-
-<img src="logo.png" width="100" alt="Troll logo">
+# Detecting-covert-disruption <img src="logo.png" width="100" alt="Troll logo">
 
 This project examines conversational properties such as conversational actions in online forum interaction to detect covert disruptive (trolling) behavior in a conversation.
 
